@@ -1,6 +1,8 @@
+# CVE-2022-38532
+
 ### Local privilege escalation in MSI Center desktop application.
 
-![CVE-2022-xxxxx](https://github.com/nam3lum/msi-central_privesc/raw/main/media/MSI%20Center.png)
+![CVE-2022-38532](https://github.com/nam3lum/msi-central_privesc/raw/main/media/MSI%20Center.png)
 
 The vulnerability exist in "C_Features" of MSI.CentralServer.exe. MSI.CentralServer.exe is an application that gathers information about your system, it collaborates with MSI.TerminalServer.exe. The ExecuteTask function which we can call it in "CMD_AutoUpdateSDK" gives us a chance to run an exectable with custom parameters under Administrative privileges. You can see the related port only from localhost. 
 
